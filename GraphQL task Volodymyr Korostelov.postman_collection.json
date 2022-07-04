@@ -1,0 +1,126 @@
+{
+	"info": {
+		"_postman_id": "0804419b-d96d-417c-960e-a551f9191eae",
+		"name": "GraphQL task Volodymyr Korostelov",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3254197"
+	},
+	"item": [
+		{
+			"name": "All species in \"A new hope\"",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "{\r\n  film(id: \"ZmlsbXM6MQ==\") {\r\n    speciesConnection {\r\n      species {\r\n        name\r\n      }\r\n    }\r\n  }\r\n}",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "https://swapi-graphql.netlify.app/.netlify/functions/index",
+					"protocol": "https",
+					"host": [
+						"swapi-graphql",
+						"netlify",
+						"app"
+					],
+					"path": [
+						".netlify",
+						"functions",
+						"index"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Droid personal data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "{\r\n  film(id: \"ZmlsbXM6MQ==\") {\r\n    speciesConnection {\r\n      species {\r\n        name\r\n      }\r\n    }\r\n  }\r\n}",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "https://swapi-graphql.netlify.app/.netlify/functions/index",
+					"protocol": "https",
+					"host": [
+						"swapi-graphql",
+						"netlify",
+						"app"
+					],
+					"path": [
+						".netlify",
+						"functions",
+						"index"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Total count in the movie \"A new hope\"",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "{\r\n  film(id: \"ZmlsbXM6MQ==\") {\r\n    characterConnection { totalCount\r\n      characters{\r\n        name\r\n        id\r\n        gender\r\n      }\r\n    }\r\n  }\r\n}",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "https://swapi-graphql.netlify.app/.netlify/functions/index",
+					"protocol": "https",
+					"host": [
+						"swapi-graphql",
+						"netlify",
+						"app"
+					],
+					"path": [
+						".netlify",
+						"functions",
+						"index"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "4th character in the movie \"A new hope\"",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "{\r\n  film(id: \"ZmlsbXM6MQ==\") {\r\n    speciesConnection {\r\n      species {\r\n        name\r\n      }\r\n    }\r\n  }\r\n}",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "https://swapi-graphql.netlify.app/.netlify/functions/index",
+					"protocol": "https",
+					"host": [
+						"swapi-graphql",
+						"netlify",
+						"app"
+					],
+					"path": [
+						".netlify",
+						"functions",
+						"index"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
