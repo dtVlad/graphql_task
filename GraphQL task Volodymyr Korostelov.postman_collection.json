@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "0804419b-d96d-417c-960e-a551f9191eae",
+		"_postman_id": "263e36fa-dd0c-4c0b-9e39-159023f6e2ff",
 		"name": "GraphQL task Volodymyr Korostelov",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "3254197"
@@ -43,7 +43,7 @@
 				"body": {
 					"mode": "graphql",
 					"graphql": {
-						"query": "{\r\n  film(id: \"ZmlsbXM6MQ==\") {\r\n    speciesConnection {\r\n      species {\r\n        name\r\n      }\r\n    }\r\n  }\r\n}",
+						"query": "query {\r\n  species(id: \"c3BlY2llczoy==\") {\r\n    personConnection {\r\n      people {\r\n        name\r\n        birthYear\r\n        eyeColor\r\n        homeworld{\r\n          name\r\n        }\r\n      }\r\n    }\r\n  }\r\n}",
 						"variables": ""
 					}
 				},
@@ -101,7 +101,7 @@
 				"body": {
 					"mode": "graphql",
 					"graphql": {
-						"query": "{\r\n  film(id: \"ZmlsbXM6MQ==\") {\r\n    speciesConnection {\r\n      species {\r\n        name\r\n      }\r\n    }\r\n  }\r\n}",
+						"query": "{\r\n  film(id: \"ZmlsbXM6MQ==\") {\r\n    characterConnection(first: 1, after: \"YXJyYXljb25uZWN0aW9uOjI=\") {\r\n      edges {\r\n        node {\r\n          name\r\n          birthYear\r\n          eyeColor\r\n          homeworld {\r\n            name\r\n          }\r\n          starshipConnection {\r\n            starships {\r\n              name\r\n            }\r\n          }\r\n        }\r\n        cursor\r\n      }\r\n      pageInfo {\r\n        endCursor\r\n        hasNextPage\r\n      }\r\n    }\r\n  }\r\n}",
 						"variables": ""
 					}
 				},
